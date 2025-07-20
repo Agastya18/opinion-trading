@@ -1,0 +1,21 @@
+{
+  "name": "@repo/logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "tsx": "^4.20.3",
+    "winston": "^3.17.0"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
