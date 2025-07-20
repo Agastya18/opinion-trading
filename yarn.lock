@@ -195,6 +195,62 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/client@^6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/client/-/client-6.12.0.tgz"
+  integrity sha512-wn98bJ3Cj6edlF4jjpgXwbnQIo/fQLqqQHPk2POrZPxTlhY3+n90SSIF3LMRVa8VzRFC/Gec3YKJRxRu+AIGVA==
+
+"@prisma/config@6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/config/-/config-6.12.0.tgz"
+  integrity sha512-HovZWzhWEMedHxmjefQBRZa40P81N7/+74khKFz9e1AFjakcIQdXgMWKgt20HaACzY+d1LRBC+L4tiz71t9fkg==
+  dependencies:
+    jiti "2.4.2"
+
+"@prisma/debug@6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/debug/-/debug-6.12.0.tgz"
+  integrity sha512-plbz6z72orcqr0eeio7zgUrZj5EudZUpAeWkFTA/DDdXEj28YHDXuiakvR6S7sD6tZi+jiwQEJAPeV6J6m/tEQ==
+
+"@prisma/engines-version@6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc":
+  version "6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc"
+  resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc.tgz"
+  integrity sha512-70vhecxBJlRr06VfahDzk9ow4k1HIaSfVUT3X0/kZoHCMl9zbabut4gEXAyzJZxaCGi5igAA7SyyfBI//mmkbQ==
+
+"@prisma/engines@6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/engines/-/engines-6.12.0.tgz"
+  integrity sha512-4BRZZUaAuB4p0XhTauxelvFs7IllhPmNLvmla0bO1nkECs8n/o1pUvAVbQ/VOrZR5DnF4HED0PrGai+rIOVePA==
+  dependencies:
+    "@prisma/debug" "6.12.0"
+    "@prisma/engines-version" "6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc"
+    "@prisma/fetch-engine" "6.12.0"
+    "@prisma/get-platform" "6.12.0"
+
+"@prisma/fetch-engine@6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-6.12.0.tgz"
+  integrity sha512-EamoiwrK46rpWaEbLX9aqKDPOd8IyLnZAkiYXFNuq0YsU0Z8K09/rH8S7feOWAVJ3xzeSgcEJtBlVDrajM9Sag==
+  dependencies:
+    "@prisma/debug" "6.12.0"
+    "@prisma/engines-version" "6.12.0-15.8047c96bbd92db98a2abc7c9323ce77c02c89dbc"
+    "@prisma/get-platform" "6.12.0"
+
+"@prisma/get-platform@6.12.0":
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/@prisma/get-platform/-/get-platform-6.12.0.tgz"
+  integrity sha512-nRerTGhTlgyvcBlyWgt8OLNIV7QgJS2XYXMJD1hysorMCuLAjuDDuoxmVt7C2nLxbuxbWPp7OuFRHC23HqD9dA==
+  dependencies:
+    "@prisma/debug" "6.12.0"
+
+"@repo/db@*", "@repo/db@file:/Users/agastyagaur/Desktop/opinion-trading/packages/db":
+  version "1.0.0"
+  resolved "file:packages/db"
+  dependencies:
+    "@prisma/client" "^6.12.0"
+    "@types/node" "^24.0.15"
+    dotenv "^17.2.0"
+
 "@repo/eslint-config@*", "@repo/eslint-config@file:/Users/agastyagaur/Desktop/opinion-trading/packages/eslint-config":
   version "0.0.0"
   resolved "file:packages/eslint-config"
@@ -206,6 +262,10 @@
     date-fns "^4.1.0"
     tsx "^4.20.3"
     winston "^3.17.0"
+
+"@repo/types@*", "@repo/types@file:/Users/agastyagaur/Desktop/opinion-trading/packages/types":
+  version "1.0.0"
+  resolved "file:packages/types"
 
 "@repo/typescript-config@*", "@repo/typescript-config@file:/Users/agastyagaur/Desktop/opinion-trading/packages/typescript-config":
   version "0.0.0"
@@ -326,7 +386,7 @@
   resolved "https://registry.npmjs.org/@types/ms/-/ms-2.1.0.tgz"
   integrity sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^24.0.15":
   version "24.0.15"
   resolved "https://registry.npmjs.org/@types/node/-/node-24.0.15.tgz"
   integrity sha512-oaeTSbCef7U/z7rDeJA138xpG3NuKc64/rZ2qmUFkFJmnMsAPaluIifqyWd8hSSMxyP9oie3dLAqYPblag9KgA==
@@ -1948,6 +2008,11 @@ iterator.prototype@^1.1.4:
     has-symbols "^1.1.0"
     set-function-name "^2.0.2"
 
+jiti@*, jiti@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.npmjs.org/jiti/-/jiti-2.4.2.tgz"
+  integrity sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -2442,6 +2507,14 @@ prettier@^3.6.2:
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.6.2.tgz"
   integrity sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==
 
+prisma@*, prisma@^6.12.0:
+  version "6.12.0"
+  resolved "https://registry.npmjs.org/prisma/-/prisma-6.12.0.tgz"
+  integrity sha512-pmV7NEqQej9WjizN6RSNIwf7Y+jeh9mY1JEX2WjGxJi4YZWexClhde1yz/FuvAM+cTwzchcMytu2m4I6wPkIzg==
+  dependencies:
+    "@prisma/config" "6.12.0"
+    "@prisma/engines" "6.12.0"
+
 prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
@@ -2703,11 +2776,15 @@ serve-static@^2.2.0:
   version "1.0.0"
   resolved "file:apps/server"
   dependencies:
+    "@prisma/client" "^6.12.0"
+    "@repo/db" "*"
     "@repo/logger" "*"
+    "@repo/types" "*"
     "@types/cors" "^2.8.19"
     "@types/express" "^5.0.3"
     "@types/jsonwebtoken" "^9.0.10"
     "@types/morgan" "^1.9.10"
+    "@types/node" "^24.0.15"
     "@types/ws" "^8.18.1"
     body-parser "^2.2.0"
     cors "^2.8.5"
@@ -3142,7 +3219,7 @@ typescript-eslint@^8.36.0:
     "@typescript-eslint/typescript-estree" "8.37.0"
     "@typescript-eslint/utils" "8.37.0"
 
-typescript@^5.8.2, typescript@^5.8.3, typescript@>=2.7, typescript@>=4.8.4, "typescript@>=4.8.4 <5.9.0", typescript@5.8.3:
+typescript@^5.8.2, typescript@^5.8.3, typescript@>=2.7, typescript@>=4.8.4, "typescript@>=4.8.4 <5.9.0", typescript@>=5.1.0, typescript@5.8.3:
   version "5.8.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz"
   integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
