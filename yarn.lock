@@ -243,6 +243,33 @@
   dependencies:
     "@prisma/debug" "6.12.0"
 
+"@redis/bloom@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@redis/bloom/-/bloom-5.6.0.tgz"
+  integrity sha512-l13/d6BaZDJzogzZJEphIeZ8J0hpQpjkMiozomTm6nJiMNYkoPsNOBOOQua4QsG0fFjyPmLMDJFPAp5FBQtTXg==
+
+"@redis/client@^5.6.0", "@redis/client@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@redis/client/-/client-5.6.0.tgz"
+  integrity sha512-wmP9kCFElCSr4MM4+1E4VckDuN4wLtiXSM/J0rKVQppajxQhowci89RGZr2OdLualowb8SRJ/R6OjsXrn9ZNFA==
+  dependencies:
+    cluster-key-slot "1.1.2"
+
+"@redis/json@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@redis/json/-/json-5.6.0.tgz"
+  integrity sha512-YQN9ZqaSDpdLfJqwzcF4WeuJMGru/h4WsV7GeeNtXsSeyQjHTyDxrd48xXfRRJGv7HitA7zGnzdHplNeKOgrZA==
+
+"@redis/search@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@redis/search/-/search-5.6.0.tgz"
+  integrity sha512-sLgQl92EyMVNHtri5K8Q0j2xt9c0cO9HYurXz667Un4xeUYR+B/Dw5lLG35yqO7VvVxb9amHJo9sAWumkKZYwA==
+
+"@redis/time-series@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/@redis/time-series/-/time-series-5.6.0.tgz"
+  integrity sha512-tXABmN1vu4aTNL3WI4Iolpvx/5jgil2Bs31ozvKblT+jkUoRkk8ykmYo9Pv/Mp7Gk6/Qkr/2rMgVminrt/4BBQ==
+
 "@repo/db@*", "@repo/db@file:/Users/agastyagaur/Desktop/opinion-trading/packages/db":
   version "1.0.0"
   resolved "file:packages/db"
@@ -262,6 +289,13 @@
     date-fns "^4.1.0"
     tsx "^4.20.3"
     winston "^3.17.0"
+
+"@repo/order-queue@*", "@repo/order-queue@file:/Users/agastyagaur/Desktop/opinion-trading/packages/order-queue":
+  version "1.0.0"
+  resolved "file:packages/order-queue"
+  dependencies:
+    nodemon "^3.1.10"
+    redis "^5.6.0"
 
 "@repo/types@*", "@repo/types@file:/Users/agastyagaur/Desktop/opinion-trading/packages/types":
   version "1.0.0"
@@ -832,7 +866,7 @@ client-only@0.0.1:
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
-cluster-key-slot@^1.1.0:
+cluster-key-slot@^1.1.0, cluster-key-slot@1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz"
   integrity sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==
@@ -2614,6 +2648,17 @@ redis-parser@^3.0.0:
   dependencies:
     redis-errors "^1.0.0"
 
+redis@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.npmjs.org/redis/-/redis-5.6.0.tgz"
+  integrity sha512-0x3pM3SlYA5azdNwO8qgfMBzoOqSqr9M+sd1hojbcn0ZDM5zsmKeMM+zpTp6LIY+mbQomIc/RTTQKuBzr8QKzQ==
+  dependencies:
+    "@redis/bloom" "5.6.0"
+    "@redis/client" "5.6.0"
+    "@redis/json" "5.6.0"
+    "@redis/search" "5.6.0"
+    "@redis/time-series" "5.6.0"
+
 reflect.getprototypeof@^1.0.6, reflect.getprototypeof@^1.0.9:
   version "1.0.10"
   resolved "https://registry.npmjs.org/reflect.getprototypeof/-/reflect.getprototypeof-1.0.10.tgz"
@@ -2779,6 +2824,7 @@ serve-static@^2.2.0:
     "@prisma/client" "^6.12.0"
     "@repo/db" "*"
     "@repo/logger" "*"
+    "@repo/order-queue" "*"
     "@repo/types" "*"
     "@types/cors" "^2.8.19"
     "@types/express" "^5.0.3"

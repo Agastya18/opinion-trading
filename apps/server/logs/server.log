@@ -6,3 +6,33 @@
 [ 2025-07-20 13:09:16 ] -  [32minfo[39m -  POST - /events/create - 500 - 3.287ms
 [ 2025-07-20 20:20:19 ] -  [32minfo[39m -  POST - /events/create - 201 - 3073.660ms
 [ 2025-07-20 20:26:23 ] -  [32minfo[39m -  POST - /events/create - 201 - 1742.782ms
+[ 2025-07-20 22:50:50 ] -  [32minfo[39m -  POST - /events/create - 201 - 2275.405ms
+[ 2025-07-20 22:52:54 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:52:54 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:54:26 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:54:26 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:54:33 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:54:33 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:57:24 ] -  [32minfo[39m -  POST - /orders/lace-order - 404 - 1.207ms
+[ 2025-07-20 22:57:37 ] -  [32minfo[39m -  POST - /orders/lace-order - 404 - 1.085ms
+[ 2025-07-20 22:57:38 ] -  [32minfo[39m -  POST - /orders/lace-order - 404 - 0.539ms
+[ 2025-07-20 22:57:39 ] -  [32minfo[39m -  POST - /orders/lace-order - 404 - 0.314ms
+[ 2025-07-20 22:57:57 ] -  [32minfo[39m -  Message added to ORDER_QUEUE:
+[ 2025-07-20 22:57:57 ] -  [32minfo[39m -  POST - /orders/place-order - 201 - 6.285ms
+[ 2025-07-20 22:57:58 ] -  [32minfo[39m -  Processing message from ORDER_QUEUE:
+[ 2025-07-20 22:59:44 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:59:44 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:59:57 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:59:57 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:59:58 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:59:58 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 22:59:59 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 22:59:59 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 23:00:02 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 23:00:02 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 23:00:03 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-20 23:00:03 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-20 23:00:12 ] -  [32minfo[39m -  Message added to ORDER_QUEUE:
+[ 2025-07-20 23:00:12 ] -  [32minfo[39m -  POST - /orders/place-order - 201 - 4.471ms
+[ 2025-07-20 23:00:28 ] -  [32minfo[39m -  Message added to ORDER_QUEUE:
+[ 2025-07-20 23:00:28 ] -  [32minfo[39m -  POST - /orders/place-order - 201 - 1.902ms

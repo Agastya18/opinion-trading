@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import {eventRouter} from "./Router/eventRoute.js"
+import {orderRouter} from "./Router/orderRoute.js"
 import {logger} from '@repo/logger'; // Adjust the import path as necessary
 const app = express();
 app.use(express.json());
@@ -25,6 +26,7 @@ app.get("/", (req, res) => {
 })
 
 app.use("/events", eventRouter);
+app.use("/orders", orderRouter);
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
