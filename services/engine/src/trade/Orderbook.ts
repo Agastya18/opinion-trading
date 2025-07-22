@@ -88,13 +88,13 @@ export class Orderbook {
 
                 executedQty += qtyToFill;
                 askOrder.filled += qtyToFill;
-                this.currentPrice = askOrder.price;
+                this.currentPrice = askOrder?.price!;
                 fills.push({
-                    price: askOrder.price,
+                    price: askOrder?.price!,
                     qty: qtyToFill,
-                    tradeId: uuidv4(),  
-                    otherUserId: askOrder.userId,
-                    marketOrderId: order.orderId,
+                    tradeId: uuidv4(),
+                    otherUserId: askOrder?.userId!,
+                    marketOrderId: askOrder?.orderId!,
                 });
             }else{
                 // No more matches possible
@@ -122,13 +122,13 @@ export class Orderbook {
 
             executedQty += qtyToFill;
             bidOrder.filled += qtyToFill;
-            this.currentPrice = bidOrder.price;
+            this.currentPrice = bidOrder?.price!;
             fills.push({
-                price: bidOrder.price,
+                price: bidOrder?.price!,
                 qty: qtyToFill,
                 tradeId: uuidv4(),
-                otherUserId: bidOrder.userId,
-                marketOrderId: order.orderId,
+                otherUserId: bidOrder?.userId!,
+                marketOrderId: bidOrder?.orderId!,
             });
         } else {
             // No more matches possible
