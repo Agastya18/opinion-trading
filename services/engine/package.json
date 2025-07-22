@@ -1,0 +1,34 @@
+{
+  "name": "@repo/engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@repo/db": "*",
+    "@repo/logger": "*",
+    "@repo/order-queue": "*",
+    "@repo/types": "*",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "tsx": "^4.20.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "esbuild": "^0.25.8"
+  }
+}
