@@ -1,0 +1,3 @@
+[ 2025-07-23 21:35:58 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-23 21:35:58 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-23 21:35:58 ] -  [32minfo[39m -  Connected to Redis

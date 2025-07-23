@@ -1,6 +1,6 @@
 import { addToOrderQueue,processOrderQueue } from "./queues/orderQueue.js";
 import {logger} from "@repo/logger";
-
+import { RedisManager } from "./classes/RedisManager.js";
 // Start processing the order queue
 
 const startOrderQueueProcessing = async () => {
@@ -18,4 +18,4 @@ const startOrderQueueProcessing = async () => {
 
 startOrderQueueProcessing();
 // Export the addToOrderQueue function for external use
-export { addToOrderQueue };
+export { addToOrderQueue, RedisManager };

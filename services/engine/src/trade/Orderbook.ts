@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
 export interface Order {
-    id: string;
     filled: number;
     price: number;
     quantity: number;
