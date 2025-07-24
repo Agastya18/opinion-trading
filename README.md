@@ -16,11 +16,13 @@ This project is a real-time opinion trading platform where users can place bets 
 ---
 
 ## Architecture
+<img width="1543" height="1051" alt="architecture" src="https://github.com/user-attachments/assets/3ad9737a-9e0f-4816-8fa2-0139a83094f4" />
+
 
 The system is designed to handle real-time updates and asynchronous order processing for the order book. Below is a breakdown of the architecture:
 
 ## Architecture Diagram:
-![User Diagram](https://utfs.io/f/dasd)
+
 
 ## Components:
 
