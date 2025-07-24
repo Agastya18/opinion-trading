@@ -19,19 +19,7 @@ export const placeOrder = async (req: Request, res: Response) => {
       return res.status(400).json({ error: "All fields are required" });
     }
 
-    // but first we authorize the user ID and event ID
-    // This is a placeholder for your authorization logic
-    // You would typically check if the user is authenticated and authorized to place an order
-    // For example:
-    // const user = await prisma.user.findUnique({ where: { id: userid } });
-    // if (!user) {
-    //   return res.status(404).json({ error: "User not found" });
-    // Here you would typically check if the user exists and if the event is valid
-    // For example:
-    // const userExists = await prisma.user.findUnique({ where: { id: userid } });
-    // if (!userExists) {
-    //   return res.status(404).json({ error: "User not found" });
-    // }
+      console.log("checkpoint rrrrr")
 
     // Generate a unique order ID
     const orderId = uuid4();
@@ -47,6 +35,8 @@ export const placeOrder = async (req: Request, res: Response) => {
         userId: userid.toString(),
       },
     };
+
+  
 
     // Add the order to the queue
     await addToOrderQueue(data);

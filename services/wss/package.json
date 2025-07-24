@@ -1,0 +1,24 @@
+{
+  "name": "@repo/wss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@repo/logger": "*",
+    "@repo/order-queue": "*",
+    "@types/ws": "^8.18.1",
+    "dotenv": "^17.2.0",
+    "tsx": "^4.20.3",
+    "ws": "^8.18.3"
+  }
+}

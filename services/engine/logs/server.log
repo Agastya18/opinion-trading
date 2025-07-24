@@ -1,3 +1,26 @@
 [ 2025-07-23 21:35:58 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
 [ 2025-07-23 21:35:58 ] -  [32minfo[39m -  WORKER | Order worker started successfully
 [ 2025-07-23 21:35:58 ] -  [32minfo[39m -  Connected to Redis
+[ 2025-07-24 12:10:13 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-24 12:10:13 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-24 12:10:13 ] -  [32minfo[39m -  Connected to Redis
+[ 2025-07-24 12:21:42 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:22:49 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:22:58 ] -  [32minfo[39m -  WORKER | Starting order queue processing...
+[ 2025-07-24 12:22:58 ] -  [32minfo[39m -  WORKER | Order worker started successfully
+[ 2025-07-24 12:22:58 ] -  [32minfo[39m -  Connected to Redis
+[ 2025-07-24 12:23:06 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:32:10 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:32:10 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:33:45 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:33:45 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:33:52 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:33:52 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:36:58 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:36:58 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:37:10 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:37:10 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:37:10 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:37:35 ] -  [31merror[39m -  Error in main function: redisManager.getClient is not a function
+[ 2025-07-24 12:37:35 ] -  [32minfo[39m -  message 
+[ 2025-07-24 12:37:35 ] -  [32minfo[39m -  message 
